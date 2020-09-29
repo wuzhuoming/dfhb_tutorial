@@ -43,7 +43,7 @@ if not os.path.exists(save_path):
 
 
 if is_load:
-  load_file = po.path.join(load_path,"checkpoint_last.pt")
+  load_file = os.path.join(load_path,"checkpoint_last.pt")
   os.system("fairseq-train %s --user-dir %s --task xmasked_seq2seq \
     --source-langs en,zh \
     --target-langs en,zh \
