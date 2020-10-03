@@ -6,16 +6,16 @@
 
    ```bash
    pip install nni && \
-   wget https://github.com/vincentcheny/hpo-training/releases/download/dfhb_v1.3/DFHB-1.3-py3-none-any.whl && \
-   nnictl package install DFHB-1.3-py3-none-any.whl
+   wget https://github.com/vincentcheny/hpo-training/releases/download/dfhb_v1.4/DFHB-1.4-py3-none-any.whl && \
+   nnictl package install DFHB-1.4-py3-none-any.whl
    ```
 
 2. if success install, you should see this output  in the command line
 
    ```bash
-   Processing ./DFHB-1.3-py3-none-any.whl
+   Processing ./DFHB-1.4-py3-none-any.whl
    Installing collected packages: DFHB
-   Successfully installed DFHB-1.3
+   Successfully installed DFHB-1.4
    DFHB installed!
    ```
 
