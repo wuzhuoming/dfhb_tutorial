@@ -6,16 +6,16 @@
 
    ```bash
    pip install nni && \
-   wget https://github.com/vincentcheny/hpo-training/releases/download/dfhb_v1.4.1/DFHB-1.4.1-py3-none-any.whl && \
-   nnictl package install DFHB-1.4.1-py3-none-any.whl
+   wget https://github.com/vincentcheny/hpo-training/releases/download/dfhb_v1.5/DFHB-1.5-py3-none-any.whl && \
+   nnictl package install DFHB-1.5-py3-none-any.whl
    ```
 
 2. if success install, you should see this output  in the command line
 
    ```bash
-   Processing ./DFHB-1.4.1-py3-none-any.whl
+   Processing ./DFHB-1.5-py3-none-any.whl
    Installing collected packages: DFHB
-   Successfully installed DFHB-1.4.1
+   Successfully installed DFHB-1.5
    DFHB installed!
    ```
 
@@ -84,7 +84,7 @@
      gpuNum: 4
    localConfig:
      # specific index of GPU used by the experiment, just like CUDA_VISIBLE_DEVICES
-     gpuIndices: 0,1,2,3
+     gpuIndices: "0,1,2,3"
    EOF
    ```
    
@@ -162,7 +162,7 @@ wget https://raw.githubusercontent.com/wuzhuoming/dfhb_tutorial/master/train_elm
      gpuNum: 4
    localConfig:
      # specific index of GPU used by the experiment, just like CUDA_VISIBLE_DEVICES
-     gpuIndices: 0,1,2,3
+     gpuIndices: "0,1,2,3"
    EOF
    ```
    
@@ -237,7 +237,7 @@ wget https://raw.githubusercontent.com/wuzhuoming/dfhb_tutorial/master/train_elm
      gpuNum: 4
    localConfig:
      # specific index of GPU used by the experiment, just like CUDA_VISIBLE_DEVICES
-     gpuIndices: 0,1,2,3
+     gpuIndices: "0,1,2,3"
    EOF
    ```
    
@@ -420,7 +420,7 @@ localConfig:
   # specific index of GPU used by the experiment, just like CUDA_VISIBLE_DEVICES
   # since we set 8 trials run in parallel and each trial need 1 GPU, total visible 
   # GPU device shoule be 8.
-  gpuIndices: 0,1,2,3,4,5,6,7
+  gpuIndices: "0,1,2,3,4,5,6,7"
 EOF
 ```
 
