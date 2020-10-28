@@ -123,3 +123,4 @@ logging.info("bleu score: %d" % bs)
 
 report_dict = {'runtime':spent_time,'default':bs,'maximize':['default']}
 nni.report_final_result(report_dict)
+
